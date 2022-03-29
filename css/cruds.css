@@ -1,0 +1,253 @@
+/* Start My Frame Work */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-transform: capitalize
+}
+
+input {
+    outline: none;
+    width: 100%;
+    height: 40px;
+    border: none;
+    background: var(--color3);
+    margin: 5px 5px;
+    border-radius: 10px;
+    padding: 5px;
+    transition: var(--trans);
+    color: var(--white)
+}
+
+::placeholder{
+    transition: var(--trans) 
+}
+
+:focus::placeholder {
+    opacity: 0
+}
+
+a {
+    text-decoration: none
+}
+
+body {
+
+    background: var(--black);
+    color: var(--white);
+    font-family: tahoma
+}
+
+
+:root {
+
+    --black: #c5cedf;
+    --color1: #0000ff80;
+    --color2: blue;
+    --color3: #fff;
+    --color4: #333333c7;
+    --trans: .4s;
+    --white: #333
+}
+
+.change {
+    --white: #fff;
+    --black: #222;
+    --color1: #310044;
+    --color2: #51025f;
+    --color3: #111;
+    --color4: #080
+}
+
+.change input {
+    color: #fff
+}
+
+
+button {
+    color: #fff !important
+}
+
+.change #deleteAll {
+    background: var(--color1)
+}
+
+.change .crud .inputs button {
+    background: var(--color1)
+}
+
+i {
+    position: absolute;
+    top: 19px;
+    right: 10px;
+    font-size: 25px;
+    cursor: pointer
+}
+
+/* End My Frame Work */
+
+.crud {
+    width: 80%;
+    margin: auto
+}
+
+.crud .head {
+    text-align: center;
+    margin: 10px 0
+}
+
+.crud .head h1,
+.crud .head p {
+    text-transform: uppercase
+}
+
+.crud .head p {
+    color: #777
+}
+
+.crud .inputs .price-box {
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.crud .inputs .price-box small {
+    background: var(--color1) !important;
+    padding: 5px 2px;
+    border-radius: 6px;
+    font-weight: bold;
+    color: #fff
+}
+
+
+.crud .inputs .price-box small::before {
+    content: "total:";
+    margin-right: 5px
+}
+
+.crud .inputs button {
+    width: 100%;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    background: var(--color1);
+    color: var(--white);
+    border-radius: 10px;
+    margin-left: 5px;
+    transition: var(--trans);
+    text-transform: capitalize
+}
+
+.crud .inputs button:hover {
+    background: var(--color2)
+}
+
+.crud .outputs .search-box .btn-search {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 6px;
+}
+
+.crud .outputs .search-box .btn-search button {
+    width: 45%;
+    background: var(--color1);
+    padding: 5px;
+    height: 40px;
+    border: 0;
+    border-radius: 6px;
+    color: var(--white);
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: var(--trans)
+}
+
+.crud .outputs .search-box .btn-search button:hover {
+    background: var(--color2)
+}
+
+.crud .outputs table {
+    width: 100%;
+    text-align: center;
+    margin: 10px 0
+}
+
+.crud .outputs table th {
+    text-transform: uppercase;
+    color: var(--color4);
+    font-weight: bold
+}
+
+.crud .outputs table th,
+.crud .outputs table td {
+    padding: 5px 0
+}
+
+.crud .outputs table td button {
+
+    background: var(--color1);
+    color: var(--white);
+    border: 0;
+    padding: 5px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: var(--trans);
+    text-transform: capitalize
+}
+
+.crud .outputs table td button:hover {
+    background: var(--color2)
+}
+
+#deleteAll {
+    margin: 20px 0;
+    background: var(--color1);
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 60px;
+    color: #fff
+}
+
+#deleteAll:hover {
+    background: var(--color2)
+}
+
+@media(max-width:991px) {
+
+    .crud {
+        width: 100%;
+        overflow: hidden;
+        padding: 0 10px
+    }
+
+}
+
+@media(max-width:767px) {
+
+    .crud .outputs table {
+        font-size: 10px
+    }
+
+    .crud .inputs .price-box {
+        flex-direction: column
+    }
+
+    .crud .inputs .price-box small {
+        font-size: 15px
+    }
+
+    input,
+    .crud .inputs button,
+    .crud .outputs .search-box .btn-search {
+        margin-left: 0;
+        margin-right: 0
+    }
+
+    .crud {
+        padding: 0 15px
+    }
+}
