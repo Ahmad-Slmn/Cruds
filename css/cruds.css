@@ -216,6 +216,12 @@ i {
     background: var(--color2)
 }
 
+@media(max-width:450px){
+    .crud .outputs table th, .crud .outputs table td{
+        padding: 0 10px
+    }
+}
+
 @media(max-width:991px) {
 
     .crud {
@@ -223,7 +229,6 @@ i {
         overflow: hidden;
         padding: 0 10px
     }
-
 }
 
 @media(max-width:767px) {

@@ -187,7 +187,7 @@ function showdataintable() {
 
     let deleteAll = document.getElementById("deleteAll");
 
-    if (datProduct.length > 0) {
+    if (datProduct.length > 1) {
 
         deleteAll.style.display = "flex";
 
